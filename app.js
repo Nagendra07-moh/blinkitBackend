@@ -12,7 +12,7 @@ const start = async () =>{
             if(err){
                 console.warn("Yo got an error",err)
             }else{
-                console.log("Your Server is running!!!")
+                console.log("Your Server is running!!",addr)
             }
         })
     } catch (error) {
