@@ -52,6 +52,9 @@ const orderSchema = new mongoose.Schema({
     updatedAt:{type:Date , default:Date.now }
 
 })
+
+// Revisit this code again later and understand it properly
+
 async function getNextSequenceValue(sequenceName){
     const sequenceDocument  = await Counter.findOneAndUpdate(
      {name: sequenceName},
